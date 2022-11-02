@@ -8,7 +8,7 @@ def get_first_row(data):
    """
    rows=data.split('\n')
    s=[]
-   for i in rows[1:]:
+   for i in rows:
        s.append(i.split(',')[0])
    return s
     
