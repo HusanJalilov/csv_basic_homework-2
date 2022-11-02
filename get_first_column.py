@@ -6,7 +6,7 @@ def get_first_column(data):
     Return:
         list: First column.
     """
-    return data.split('\n')[1].split(',')
+    return data.split('\n')[0].split(',')
     
 # Read the csv file
 
