@@ -8,9 +8,10 @@ def get_first_row(data):
    """
    rows=data.split('\n')
    s=[]
+   s.append(data.split('\n')[0].split(','))
    for i in rows:
        s.append(i.split(',')[0])
-   s.append(data.split('\n')[0].split(','))
+   
    return s
     
 # Read the csv file
