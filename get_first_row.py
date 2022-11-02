@@ -8,8 +8,8 @@ def get_first_row(data):
    """
    rows=data.split('\n')
    s=[]
-   s.append(data.split('\n')[0].split(','))
-   for i in rows:
+  
+   for i in rows[1:]:
        s.append(i.split(',')[0])
    
    return s
