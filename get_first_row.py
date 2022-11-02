@@ -6,7 +6,13 @@ def get_first_row(data):
     Return:
         list: First row.
    """
-   
-   return
-
+   rows=data.split('\n')
+   s=[]
+   for i in rows[1:]:
+       s.append(i.split(',')[0])
+   return s
+    
 # Read the csv file
+
+data=open('data.csv').read()
+print(get_first_row(data))
